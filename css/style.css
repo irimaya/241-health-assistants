@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Main Styling */
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -22,21 +20,9 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
-  font-size: 1.75rem;
-}
-
 h4 {
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
 }
 
 p {
@@ -49,11 +35,9 @@ a {
   text-decoration: none;
 }
 
-/* Utility Classes */
 .container {
   margin: auto;
   max-width: 1300px;
-  overflow: auto;
   padding: 0 20px;
 }
 
@@ -87,12 +71,12 @@ form label {
 form .form-group {
   margin-bottom: 16px;
 }
-form .form-control {
+form .form-group-control {
   width: 100%;
   padding: 7px 12px;
   font-size: 1rem;
   line-height: 1.5;
-  background: #F9F9F9;
+  background: #f9f9f9;
   border: none;
   border-radius: 4px;
 }
@@ -100,10 +84,9 @@ form button {
   width: 100%;
 }
 
-/* Navbar */
 #navbar {
   height: 12vh;
-  background: #10A7EA;
+  background: #10a7ea;
   color: #fff;
   overflow: auto;
   padding-top: 20px;
@@ -128,10 +111,6 @@ form button {
   display: block;
   padding: 20px;
   text-align: center;
-}
-#navbar ul li a:hover,
-#navbar ul li a.current {
-  text-decoration: underline;
 }
 
 #showcase {
@@ -173,7 +152,7 @@ form button {
 
 #services {
   padding: 100px 0;
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 #services h2 {
   text-align: center;
@@ -216,9 +195,8 @@ form button {
   margin: 0 auto;
 }
 
-/* Footer */
 #mainfooter {
-  background: #10A7EA;
+  background: #10a7ea;
   text-align: center;
   padding: 30px;
 }

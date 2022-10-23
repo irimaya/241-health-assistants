@@ -1,43 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $font-stack: 'Montserrat', sans-serif;
-$primary-color: #10A7EA;
+$primary-color: #10a7ea;
 $secondary-color: #273746;
-$secondary-gray: #F9F9F9;
+$color-gray: #f9f9f9;
 
-/* Reset */
+// Reset
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* Main Styling */
+// Main Styling
 html,
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $font-stack;
 }
 
 h1 {
 	font-size: 2.5rem;
 }
+
 h2 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: 400;
 }
-h3 {
-	font-size: 1.75rem;
-}
+
 h4 {
 	font-size: 1.5rem;
 	font-weight: 500;
-}
-h5 {
-	font-size: 1.25rem;
-}
-h6 {
-	font-size: 1rem;
 }
 
 p {
@@ -50,11 +43,10 @@ a {
 	text-decoration: none;
 }
 
-/* Utility Classes */
+// Utility Classes
 .container {
 	margin: auto;
 	max-width: 1300px;
-	overflow: auto;
 	padding: 0 20px;
 }
 
@@ -78,8 +70,8 @@ a {
 		background: $secondary-color;
 		border: 1px solid $secondary-color;
 		color: #fff;
-	} //End btn-dark
-} //End btn
+	}
+} //End .btn
 
 form {
 	label {
@@ -88,22 +80,22 @@ form {
 	}
 	.form-group {
 		margin-bottom: 16px;
-	}
-	.form-control {
-		width: 100%;
-		padding: 7px 12px;
-		font-size: 1rem;
-		line-height: 1.5;
-		background: #F9F9F9;
-		border: none;
-		border-radius: 4px;
-	} //End form .form-control
+		&-control {
+			width: 100%;
+			padding: 7px 12px;
+			font-size: 1rem;
+			line-height: 1.5;
+			background: $color-gray;
+			border: none;
+			border-radius: 4px;
+		} //End form .form-group-control
+	} // End form .form-group
 	button {
 		width: 100%;
 	}
 } //End form
 
-/* Navbar */
+// Navbar
 #navbar {
 	height: 12vh;
 	background: $primary-color;
@@ -111,35 +103,27 @@ form {
 	overflow: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-
 	a {
 		color: #fff;
 	}
-	
 	.logo {
 		float: left;
 		padding-top: 16px;
 		font-size: 25px;
 	}
-	
+
 	ul {
 		list-style: none;
 		float: right;
 		li {
 			float: left;
 		}
-		
 		li a {
 			display: block;
 			padding: 20px;
 			text-align: center;
 		}
-		
-		li a:hover,
-		li a.current {
-			text-decoration: underline;
-		}
-	} //End #navbar ul
+	}
 } //End #navbar
 
 // Showcase
@@ -155,9 +139,9 @@ form {
 	}
 	p {
 		width: 50%;
-		padding: 15px 0 ;
+		padding: 15px 0;
 	}
-} //End #showcase
+}
 
 // About
 #about {
@@ -169,6 +153,7 @@ form {
 	img {
 		width: 100%;
 	}
+
 	.about-flex {
 		display: flex;
 		&-image {
@@ -178,13 +163,13 @@ form {
 			flex: 1;
 			padding: 20px 40px;
 		}
-	} //End #about .about-flex
+	}
 } //End #about
 
 // Services
 #services {
 	padding: 100px 0;
-	background: $secondary-gray;
+	background: $color-gray;
 	h2 {
 		text-align: center;
 		padding-bottom: 10px;
@@ -208,7 +193,7 @@ form {
 				padding: 10px 0;
 			}
 		}
-	} //End #services .services-flex
+	}
 } //End #services
 
 // Contact
@@ -226,9 +211,9 @@ form {
 		width: 50%;
 		margin: 0 auto;
 	}
-} //End #contact
+}
 
-/* Footer */
+// Footer
 #mainfooter {
 	background: $primary-color;
 	text-align: center;
